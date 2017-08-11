@@ -1,0 +1,468 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  color: black; }
+
+img {
+  max-width: 100%; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+h1, h2, h3, h4, h5, p, span {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: 'Josefin Sans', sans-serif; }
+
+h3 {
+  font-size: 30px;
+  text-align: center; }
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto; }
+
+section {
+  padding: 30px 0; }
+
+.headerMain {
+  height: calc(100% - 91px);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 20px;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .headerMain h2 {
+    font-size: 40px;
+    color: white; }
+  .headerMain p {
+    max-width: 600px;
+    color: white;
+    text-align: center; }
+
+form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 90%;
+  color: whie; }
+  form div {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    form div h4 {
+      width: 100%;
+      text-align: center;
+      margin: 10px 0 5px; }
+    form div input {
+      width: 375px;
+      height: 50px;
+      border-radius: 3px;
+      border: none;
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 24px;
+      padding: 20px 10px; }
+    form div input#searchCity {
+      max-width: 450px; }
+    form div select {
+      width: 200px;
+      height: 50px;
+      margin: 0 10px;
+      background: rgba(200, 200, 200, 0.3);
+      border: 1px solid transparent;
+      color: lightblue;
+      font-family: 'Josefin Sans', sans-serif; }
+      form div select:hover {
+        box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
+        -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+        transform: translateY(-1px);
+        cursor: pointer; }
+      form div select option {
+        height: 30px; }
+    form div #submitButton {
+      width: 250px;
+      margin: 0 auto; }
+
+button, input#submitButton {
+  background:lightblue;
+  color: antiquewhite;
+  font-size: 16px;
+  border-radius: 3px;
+  font-family: 'Josefin Sans', sans-serif;
+   font-weight: bold;
+  padding: 10px 20px;
+  border: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-transform: uppercase;
+  margin: 10px 20px; }
+  button:hover, input#submitButton:hover {
+    box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px); }
+
+header {
+  height: 100vh;
+  min-height: 700px;
+  background: linear-gradient(rgba(75, 120, 220, 0.8), rgba(75, 120, 220, 0.8)), url(img/herob.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  header nav {
+    background: #1945ff;
+    text-align: left;
+    color: white;
+    padding: 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  header .wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    header .wrapper .fa {
+      margin-left: 10px;
+      font-size: 20px;
+      color: white; }
+      header .wrapper .fa:hover {
+        -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        transform: translateY(-2px); }
+  header h1 {
+    margin: 0; }
+
+.results {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+#food, #brewery, .decideResults {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: 20px; }
+
+.decideContainer {
+  text-align: center; }
+
+.selection {
+  text-align: center; }
+
+.listing {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 25%;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .listing:hover {
+    box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px); }
+  .listing img {
+    width: 100px;
+    margin-bottom: 10px; }
+  .listing .listingMid {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; }
+  .listing .listingRight {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%; }
+    .listing .listingRight .websiteIcon {
+      width: 30px;
+      height: 30px; }
+
+.selection {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+@media (max-width: 1000px) {
+  .listing img {
+    width: 75px;
+    height: 75px; }
+  .listing p {
+    font-size: 14px; } }
+
+@media (max-width: 700px) {
+  .headerMain p {
+    max-width: 400px; }
+  #food, #brewery, .decideResults {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .listing {
+    width: calc(49% - 40px);
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  form div {
+    font-size: 20px; }
+    form div input {
+      width: 250px;
+      height: 40px;
+      font-size: 20px; }
+    form div select {
+      height: 40px; }
+  button, input#submitButton {
+    font-size: 14px;
+    padding: 10px 20px; }
+  .decideContainer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .decideContainer button {
+      width: 49%;
+      margin-bottom: 10px; } }
+
+@media (max-width: 540px) {
+  .headerMain {
+    padding-top: 0; }
+    .headerMain h2 {
+      font-size: 30px; }
+    .headerMain p {
+      font-size: 14px; }
+  .wrapper {
+    width: 95%; }
+  form {
+    margin-top: 20px; }
+    form div {
+      margin: 0 0 10px 0; }
+      form div input#searchCity {
+        margin: 10px 0;
+        height: 30px;
+        width: 40%; }
+      form div select {
+        margin: 0 10px;
+        width: 40%;
+        height: 30px;
+        font-size: 14px; }
+      form div #submitButton {
+        width: 150px;
+        margin-top: 10px; }
+  .listing {
+    margin-left: 10px;
+    margin-right: 10px; } }
+
+@media (max-width: 420px) {
+  .listing {
+    width: 70%; } }

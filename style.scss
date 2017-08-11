@@ -1,0 +1,322 @@
+@import 'partials/normalize';
+
+body {
+	color: black;
+}
+img {
+	max-width: 100%;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+h1,h2,h3,h4,h5,p,span {
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+}
+.wrapper {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+section {
+	padding: 30px 0;
+}
+
+.headerMain {
+	height: calc(100% - 91px);
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+	justify-content: center;
+	align-items: center;
+	h2 {
+		font-size: 40px;
+		color: white;
+	}
+	p {
+		max-width: 600px;
+		color: white;
+		text-align: center;
+	}
+}
+form {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 900px;
+	width: 90%;
+	color: white;
+	div {
+		width: 100%;
+		margin: 20px 0;
+		font-size: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		h4 {
+			width: 100%;
+			text-align: center;
+			margin: 10px 0 5px;
+		}
+		input {
+			width: 375px;
+			height: 50px;
+			border-radius: 3px;
+			border: none;
+			font-family: 'Josefin Sans', sans-serif;
+			font-size: 24px;
+			padding: 20px 10px;
+		}
+		input#searchCity {
+			max-width: 450px;
+		}
+		select {
+			width: 200px;
+			height: 50px;
+			margin: 0 10px;
+			background: rgba(200,200,200,0.3);
+			border: 1px solid transparent;
+			color: white;
+			font-family: 'Josefin Sans', sans-serif;
+			&:hover {
+				box-shadow: 0 20px 5px -10px rgba(#000, 0.4);
+				transform: translateY(-1px);
+				cursor: pointer;
+			}
+			option {
+				height: 30px;
+			}
+		}
+		#submitButton {
+			width: 250px;
+			margin: 0 auto;
+		}
+	}
+}
+button, input#submitButton {
+	background: rgb(255, 190, 0);
+	font-size: 20px;
+	border-radius: 3px;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 20px 40px;
+	border: 0px;
+	appearance: none;
+	text-transform: uppercase;
+	margin: 10px 20px;
+	&:hover {
+		box-shadow: 0 20px 5px -10px rgba(#000, 0.4);
+		transform: translateY(-2px);
+	}
+}
+
+
+
+
+header {
+	height: 100vh;
+	min-height: 700px;
+	background: linear-gradient(rgba(75,120,220, 0.8), rgba(75,120,220,0.8)), url(img/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	nav {
+		background: rgb(25, 69, 255);
+		text-align: left;
+		color: white;
+		padding: 20px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.fa {
+			margin-left: 10px;
+			font-size: 20px;
+			color: white;
+			&:hover {
+				transform: translateY(-2px);
+			}
+		}
+	}
+	h1 {
+		margin: 0;
+	}
+}
+
+
+
+.results {
+	display: none;
+	flex-direction: column;
+}
+
+
+#food, #brewery, .decideResults {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+.decideContainer {
+	text-align: center;
+}
+
+.selection {
+	text-align: center;
+}
+
+.listing {
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 4px;
+	display: flex;
+	margin: 20px;
+	flex-direction: column;
+	align-items: center;
+	width: 25%;
+	justify-content: space-between;
+	&:hover {
+		box-shadow: 0 20px 5px -10px rgba(#000, 0.4);
+		transform: translateY(-2px);
+	}
+	img {
+		width: 100px;
+		margin-bottom: 10px;
+	}
+	.listingMid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	}
+	.listingRight {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		.websiteIcon {
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
+.selection {
+	display: none;
+	flex-direction: column;
+}
+
+
+@media (max-width: 1000px) {
+	.listing {
+		img {
+			width: 75px;
+			height: 75px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.headerMain {
+		p {
+			max-width: 400px;
+		}
+	}
+	#food, #brewery, .decideResults {
+	flex-wrap: wrap;
+}
+	.listing {
+		width: calc(49% - 40px);
+		flex-wrap: wrap;
+	}
+
+	form {
+		div {
+			font-size: 20px;
+			input {
+				width: 250px;
+				height: 40px;
+				font-size: 20px
+			}
+			select {
+				height: 40px;
+			}
+		}
+	}
+	button, input#submitButton {
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+
+	.decideContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		button {
+			width: 49%;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media (max-width: 540px) {
+	.headerMain {
+		padding-top: 0;
+		h2 {
+			font-size: 30px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	.wrapper {
+		width: 95%;
+	}
+
+	form {
+		margin-top: 20px;
+		div {
+			margin: 0 0 10px 0;
+			input#searchCity {
+				margin: 10px 0;
+				height: 30px;
+				width: 40%;
+			}
+			select {
+				margin: 0 10px;
+				width: 40%;
+				height: 30px;
+				font-size: 14px;
+			}
+			#submitButton {
+				width: 150px;
+				margin-top: 10px;
+			}
+		}
+	}
+	.listing {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 420px) {
+	.listing {
+		width: 70%;
+	}
+}

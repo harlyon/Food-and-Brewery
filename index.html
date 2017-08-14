@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Food and Brewery Search</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,600,700" rel="stylesheet">
+	<script
+	        src="https://code.jquery.com/jquery-3.1.1.min.js"
+	        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	        crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header>
+	<div class="headerMain">
+	<h2>Food n Brewery</h2>
+	<p>Check out available shops for your next meal. It's easy!</p>
+	<form action="#" id="submitForm">
+		<div>
+			<input type="text" id="searchCity" placeholder="Pick a location..">
+			<select name="typeOfFood" id="typeOfFood">
+				<option selected hidden>Select a food..</option>
+				<option value="Burgers">Burgers</option>
+				<option value="Pizza">Pizza</option>
+				<option value="Sushi">Sushi</option>
+				<option value="Pho">Pho</option>
+			</select>
+		</div>	
+		<div>
+			<h4>Select Food Options</h4>
+			<select name="foodRating" id="foodRating">
+				<option selected hidden>Select Rating..</option>
+				<option value="highRated">Top Notch</option>
+				<option value="medRated">Middle of the pack</option>
+				<option value="lowRated">Hope for the best!</option>
+			</select>
+			<select name="foodPrice" id="foodPrice">
+				<option selected hidden>Select Price..</option>
+				<option value="1">$</option>
+				<option value="2">$$</option>
+				<option value="3">$$$</option>
+			</select>
+		</div>
+
+		<div>
+		<h4>Select Brewery Options</h4>
+			<select name="breweryRating" id="breweryRating">
+				<option selected hidden>Select Rating..</option>
+				<option value="highRated">Top Notch</option>
+				<option value="medRated">Middle of the pack</option>
+				<option value="lowRated">Hope for the best!</option>
+			</select>
+			<select name="breweryPrice" id="breweryPrice">
+				<option selected hidden>Select Price..</option>
+				<option value="1">$</option>
+				<option value="2">$$</option>
+				<option value="3">$$$</option>
+			</select>
+		</div>
+		<div>
+			<input type="submit" value="Search" id="submitButton">
+		</div>
+
+		</form>
+	</div>
+
+</header>
+
+	<main>
+	<div class="wrapper">
+
+		<section class="results">
+			<h3>Our <span class="foodType"></span> Recommendations</h3>
+			<div class="foodContainer">
+				<div id="food">
+					
+				</div>
+			</div>
+			<h3>Our Brewery Recommendations</h3>
+			<div class="breweryContainer">
+				<div id="brewery">
+
+				</div>
+			</div>
+			<div class="decideContainer">
+				<h3>Can't Decide?</h3>
+				<p>Click the button and we will recommend a pairing for you to go to.</p>
+				<button class="decide">Decide!</button>
+				<button class="startOver">Start Again</button>
+			</div>
+		</section>
+		<section class="selection">
+			<h3>Our Recommendations for you</h3>
+			<p>Enjoy!</p>
+				<div class="decideResults">
+					
+				</div>
+
+			<div class="startOver">
+				<h3>Had enough fun?</h3>
+				<p>Ready to try another search? Figure out where will your appetite take you!</p>
+				<button class="startOver">Start Again</button>
+			</div>
+	
+		</section>
+	</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script>$(function() {
+	 $('a[href*="#"]:not([href="#"])').click(function() {
+	   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	     var target = $(this.hash);
+	     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	     if (target.length) {
+	       $('html, body').animate({
+	         scrollTop: target.offset().top
+	       }, 1000);
+	       return false;
+	     }
+	   }
+	 });
+	});
+	</script>
+</body>
+</html>
